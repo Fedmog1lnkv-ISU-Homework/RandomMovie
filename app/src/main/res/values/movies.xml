@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="movie_list">
+        <item>The Matrix</item>
+        <item>Avatar</item>
+        <item>Inception</item>
+        <item>Titanic</item>
+        <item>The Dark Knight</item>
+    </string-array>
+</resources>
