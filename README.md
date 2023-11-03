@@ -8,4 +8,5 @@
 
 Пример работы:
 
-![Example video](src/example.mp4)
+https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/56fd4f21-65e6-460b-8a1e-4c378dfb3e70
+
