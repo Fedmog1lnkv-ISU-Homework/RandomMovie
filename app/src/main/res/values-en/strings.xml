@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RandomMovie</string>
+    <string name="movieTextView">Click the button to get the movie</string>
+    <string name="nextMovie">Next movie</string>
+    <string name="reset">Reset</string>
+</resources>
