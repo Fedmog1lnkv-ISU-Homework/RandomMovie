@@ -2,5 +2,6 @@
     <string name="app_name">RandomMovie</string>
     <string name="movieTextView">Нажмите кнопку для получения фильма</string>
     <string name="nextMovie">Следующий фильм</string>
+    <string name="allMoviesViewed">Все фильмы просмотрены</string>
     <string name="reset">Сброс</string>
 </resources>

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRandomMovie() {
         if (displayedMovies.size == movieList.size) {
-            binding.movieTextView.text = "Все фильмы просмотрены"
+            binding.movieTextView.text = getString(R.string.allMoviesViewed)
         } else {
             var randomMovie: String
             do {
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun resetMovies() {
         displayedMovies.clear()
-        binding.movieTextView.text = "Нажмите кнопку для получения фильма"
+        binding.movieTextView.text = getString(R.string.movieTextView)
+
     }
 }
