@@ -3,13 +3,10 @@ package com.example.randommovie
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.randommovie.databinding.ActivityMainBinding
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var movieList: Array<String>
-    private lateinit var displayedMovies: MutableList<String>
-
+    private lateinit var movieList: MutableList<String>
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,30 +14,28 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        movieList = resources.getStringArray(R.array.movie_list)
-        displayedMovies = mutableListOf()
+        updateMovieList()
 
         binding.nextMovieButton.setOnClickListener { showRandomMovie() }
         binding.resetButton.setOnClickListener { resetMovies() }
     }
 
     private fun showRandomMovie() {
-        if (displayedMovies.size == movieList.size) {
+        if (movieList.isEmpty()) {
             binding.movieTextView.text = getString(R.string.allMoviesViewed)
         } else {
-            var randomMovie: String
-            do {
-                randomMovie = movieList.random()
-            } while (displayedMovies.contains(randomMovie))
-
-            displayedMovies.add(randomMovie)
+            val randomMovie = movieList.removeAt(0)
             binding.movieTextView.text = randomMovie
         }
     }
 
     private fun resetMovies() {
-        displayedMovies.clear()
+        updateMovieList()
         binding.movieTextView.text = getString(R.string.movieTextView)
+    }
 
+    private fun updateMovieList() {
+        movieList = resources.getStringArray(R.array.movie_list).toMutableList()
+        movieList.shuffle()
     }
 }
