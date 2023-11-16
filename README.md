@@ -22,3 +22,5 @@ https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/56fd4f21
 [Видео с консультации](https://youtu.be/1xp58dEPXas)
 
 Пример работы:
+
+https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/bda95ef9-c9b7-4a0d-9b1e-67281c209fb4
