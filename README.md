@@ -1,4 +1,7 @@
-# Приложение "Случайный фильм"
+# Приложение "Случайный фильм" с данными в JSON
+
+<details>
+<summary>Приложение "Случайный фильм"</summary>
 
 Это простое приложение хранит список фильмов в XML-файле strings.xml ([Ресурсы строк в Android](https://developer.android.com/guide/topics/resources/string-resource.html)).
 
@@ -10,3 +13,12 @@
 
 https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/56fd4f21-65e6-460b-8a1e-4c378dfb3e70
 
+</details>
+
+Доработайте приложение [Случайный фильм](https://github.com/ipetrushin/RandomFilmK) так, чтобы в JSON-файле (хранится в raw ресурсах) хранилась информация о фильмах.
+
+Необходимо кроме названия фильма хранить как минимум 5-6 полей на ваш выбор, хотя бы одно из которых должно быть списком.
+
+[Видео с консультации](https://youtu.be/1xp58dEPXas)
+
+Пример работы:
