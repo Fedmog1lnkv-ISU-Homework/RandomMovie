@@ -23,4 +23,4 @@ https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/56fd4f21
 
 Пример работы:
 
-https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/bda95ef9-c9b7-4a0d-9b1e-67281c209fb4
+https://github.com/Fedmog1lnkv-ISU-Homework/RandomMovie/assets/91246102/b5acd844-a33f-427a-8f5e-d716da575d92
