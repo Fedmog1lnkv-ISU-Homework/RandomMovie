@@ -12,25 +12,19 @@ import java.io.InputStream
 class MoviesRepository(private val resources: Resources) {
 
     fun getMovies(): List<MovieDto> {
-        val inputStream: InputStream = resources.openRawResource(R.raw.movies_data)
         return try {
-            val buffer = ByteArray(inputStream.available())
-            inputStream.read(buffer)
-            val jsonString = String(buffer, Charsets.UTF_8)
+            resources.openRawResource(R.raw.movies_data).use { inputStream ->
+                val buffer = ByteArray(inputStream.available())
+                inputStream.read(buffer)
+                val jsonString = String(buffer, Charsets.UTF_8)
 
-            val gson = Gson()
-            val movieListType = object : TypeToken<List<MovieDto>>() {}.type
-            gson.fromJson(jsonString, movieListType)
-
+                val gson = Gson()
+                val movieListType = object : TypeToken<List<MovieDto>>() {}.type
+                gson.fromJson(jsonString, movieListType)
+            }
         } catch (e: IOException) {
             Log.e("MainActivity", "Error loading JSON from raw resources", e)
             emptyList()
-        } finally {
-            try {
-                inputStream.close()
-            } catch (e: IOException) {
-                Log.e("MainActivity", "Error closing InputStream", e)
-            }
         }
     }
 }
